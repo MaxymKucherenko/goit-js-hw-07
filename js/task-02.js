@@ -6,11 +6,11 @@ const ingredients = [
   "Зелень",
   "Приправы",
 ];
-const Ul = document.querySelector(`ul`);
+const ingredientsList = document.querySelector(`ul`);
 const list = document.createElement("ul");
 ingredients.forEach((element) => {
     const li = document.createElement("li"); 
     li.innerHTML = element;
     list.appendChild(li);
 });
-Ul.append(list);
+ingredientsList.append(list);
